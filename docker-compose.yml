@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:bullseye
+    restart: always
+    ports:
+      - 3010:5432
+    environment:
+      POSTGRES_PASSWORD: nzsdevsolutions
+      POSTGRES_USER: NZS
+      POSTGRES_DB: Bookstore
